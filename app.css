@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Company Motto Container */
+.motto-container {
+  display: flex;
+  flex-direction: column; /* arranging in a column? */
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0px 20px;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.motto-container h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px; 
+}
+
+.motto-container p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateX(50%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.description:hover {
+  background-color: #eee;
+}
+
+.description-content {
+  flex: 1;
+}
+
+.description-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.description img {
+  width: 500px;
+  height: 300px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+/* Line divider*/
+hr {
+  border: none;
+  border-top: 0px solid #666;
+  align-items:center;
+  margin: 1em 0;
+}
+
+/* Map Container */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Marker Button */
+.add-marker-btn {
+  background-color: #4caf50;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.add-marker-btn:hover {
+  background-color: #3c7e3f;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.navbar:hover {
+  background-color: #f1f1f1;
+}
+
+  .navbar-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .navbar-logo:last-child {
+    float: right;
+  }
+
+  .navbar-text {
+    font-size: 24px;
+    font-weight: 500;
+  }
